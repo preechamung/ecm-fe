@@ -1,7 +1,15 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import Layout from '../components/layout'
+import Sidebar from '../components/sidebar'
 
-export default function Home() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+export default function Page() {
+  return <h1 className="text-3xl font-bold underline">Hello world1!</h1>
 }
+
+Page.getLayout = function getLayout(page) {
+  return (
+    <Layout>
+      <Sidebar />
+      <div class="ml-28">{page}</div>
+    </Layout>
+  );
+};
