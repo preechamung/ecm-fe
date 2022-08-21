@@ -1,10 +1,15 @@
-import "../styles/globals.css";
+import "../styles/globals.css"
+import Layout from '../components/layout'
 
 function MyApp({ Component, pageProps }) {
-  const getLayout = Component.getLayout || ((page) => page);
-
-  return getLayout(<Component {...pageProps} />);
+  return (
+    <Layout>
+      <div className="ml-24 px-9 py-12">
+        <Component {...pageProps} />
+      </div>
+    </Layout>
+  )
 }
 
-export default MyApp;
+export default MyApp
 

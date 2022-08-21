@@ -30,7 +30,7 @@ export default function Sidebar() {
 }
 
 const SidebarContainer = tw.div`
-    w-28 h-full bg-primary pt-14 pb-12 px-1 absolute flex flex-col justify-between
+    w-24 h-full bg-brand pt-14 pb-12 px-1 absolute flex flex-col justify-between
 `
 
 const SectionMenu = tw.div`flex flex-col gap-7 justify-center`
@@ -38,17 +38,17 @@ const SectionMenu = tw.div`flex flex-col gap-7 justify-center`
 const IconContainer = tw.div`flex justify-center`
 
 const MenuIcon = tw(GiHamburgerMenu)`
-    hover:text-primary-50 hover:duration-300 cursor-pointer 
+    hover:text-dark hover:duration-300 cursor-pointer text-light
 `
 
 const SearchIcon = tw(BiSearch)`
-    hover:text-primary-50 hover:duration-300 cursor-pointer
+    hover:text-dark hover:duration-300 cursor-pointer text-light
 `
 
 const UserIcon = tw(AiOutlineUser)`
-    hover:text-primary-50 hover:duration-300 cursor-pointer
+    hover:text-dark hover:duration-300 cursor-pointer text-light
 `
 
 const BagIcon = tw(BsHandbag)`
-    hover:text-primary-50 hover:duration-300 cursor-pointer
+    hover:text-dark hover:duration-300 cursor-pointer text-light
 `
